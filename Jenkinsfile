@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Navigate to the .NET project directory
-                    dir('C:\\Users\\tripti.nayak\\source\\repos\\E-Healthcare') {
+                    dir('C:\\Users\\tripti.nayak\\source\\repos\\Ehealthcare') {
                         // Build the .NET project using 'dotnet build'
                         bat "dotnet build --configuration ${env.BUILD_CONFIGURATION}"
                     }
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     // Navigate to the client app directory (e.g., React app)
-                    dir('C:\\Users\\tripti.nayak\\source\\repos\\E-Healthcare\\ClientApp') {
+                    dir('C:\\Users\\tripti.nayak\\source\\repos\\Ehealthcare\\ClientApp') {
                         // Install dependencies using 'npm'
                         bat 'npm install'
                         
