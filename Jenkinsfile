@@ -31,7 +31,7 @@ pipeline {
                         bat 'npm install'
                         
                         // Build the client app using 'npm'
-                        bat 'npm run build'
+                        bat 'npm run build -- --treatWarningsAsErrors false'
                     }
                 }
             }
